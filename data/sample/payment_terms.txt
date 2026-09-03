@@ -1,0 +1,3 @@
+Customer invoices are payable within 30 days from the invoice date.
+Late payments may attract a penalty according to the signed agreement.
+Payment terms can vary for enterprise customers.
