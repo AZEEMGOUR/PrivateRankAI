@@ -1,0 +1,3 @@
+Employees receive software access according to their job responsibilities.
+Access requests require approval from the employee's manager.
+Access must be removed when it is no longer required.

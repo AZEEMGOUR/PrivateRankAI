@@ -1,0 +1,3 @@
+Suspected security incidents must be reported immediately to the security team.
+Employees should not attempt to hide or independently investigate serious incidents.
+The security team coordinates investigation and response.

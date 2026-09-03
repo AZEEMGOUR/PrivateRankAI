@@ -1,0 +1,3 @@
+Employees receive 12 sick leave days every year.
+A medical certificate is required when sick leave exceeds two consecutive days.
+Sick leave cannot normally be converted into paid annual leave.

@@ -1,0 +1,3 @@
+Customer contracts should be reviewed at least 30 days before their expiry date.
+Renewal terms must be approved before a replacement agreement is signed.
+Commercial changes should be documented in the renewed contract.

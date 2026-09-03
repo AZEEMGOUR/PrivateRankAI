@@ -1,0 +1,3 @@
+Critical customer support incidents require an initial response within one hour.
+High-priority incidents require a response within four hours.
+Normal support requests are handled according to the standard support queue.

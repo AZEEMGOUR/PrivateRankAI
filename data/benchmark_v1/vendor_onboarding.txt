@@ -1,0 +1,3 @@
+New vendors must provide tax registration details and banking information.
+Procurement verifies vendor documents before activation.
+Incomplete onboarding applications remain pending.

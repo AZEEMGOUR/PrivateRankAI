@@ -45,7 +45,7 @@ def main():
     # Load documents
     # -----------------------------
 
-    documents = load_documents("data/sample")
+    documents = load_documents("data/benchmark_v1")
     chunks = build_chunks(documents)
 
     print("Documents:", len(documents))
@@ -56,7 +56,7 @@ def main():
     # -----------------------------
 
     with open(
-        "data/evaluation/queries.json",
+        "data/benchmark_v1/queries.json",
         "r",
         encoding="utf-8",
     ) as file:

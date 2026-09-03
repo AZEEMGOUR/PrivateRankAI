@@ -1,0 +1,3 @@
+Approved vendor invoices are normally processed within 45 days.
+Vendor payment schedules depend on successful invoice verification.
+Incomplete invoices may be returned to the supplier.

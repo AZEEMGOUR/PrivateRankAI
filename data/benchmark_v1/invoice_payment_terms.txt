@@ -1,0 +1,3 @@
+Standard customer invoices are payable within 30 days from the invoice date.
+Different payment terms may apply when specified in a signed customer agreement.
+Overdue invoices may attract penalties.

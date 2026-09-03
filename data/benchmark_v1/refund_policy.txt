@@ -1,0 +1,3 @@
+Approved customer refunds are normally processed within seven business days.
+Refunds are returned through the original payment method when possible.
+Additional verification may be required for large refunds.

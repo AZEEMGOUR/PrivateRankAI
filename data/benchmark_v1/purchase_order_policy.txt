@@ -1,0 +1,3 @@
+Purchases above 50000 rupees require an approved purchase order.
+The purchase order must be issued before the supplier provides goods.
+Emergency purchases require written management approval.

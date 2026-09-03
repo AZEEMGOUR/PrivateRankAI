@@ -1,0 +1,3 @@
+Critical company data must be backed up every day.
+Weekly backup copies are retained separately from primary systems.
+Backup restoration tests are conducted periodically.

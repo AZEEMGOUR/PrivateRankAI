@@ -1,0 +1,3 @@
+Employees must submit business expense claims with valid receipts.
+Personal expenses are not reimbursable.
+Expense reports should be submitted within 15 days.

@@ -1,0 +1,3 @@
+Employees must protect confidential business and customer information.
+Confidential data must only be shared with authorized persons.
+Confidentiality obligations may continue after employment ends.

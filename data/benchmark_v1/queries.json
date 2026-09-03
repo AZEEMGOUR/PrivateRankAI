@@ -1,0 +1,122 @@
+[
+  {
+    "query": "How many paid annual leave days do employees receive?",
+    "expected_file": "paid_leave_policy.txt"
+  },
+  {
+    "query": "How much unpaid leave can an employee request?",
+    "expected_file": "unpaid_leave_policy.txt"
+  },
+  {
+    "query": "How many sick days are available each year?",
+    "expected_file": "sick_leave_policy.txt"
+  },
+  {
+    "query": "What is the deadline for submitting travel expenses?",
+    "expected_file": "travel_reimbursement.txt"
+  },
+  {
+    "query": "Does overseas business travel need approval before booking?",
+    "expected_file": "international_travel.txt"
+  },
+  {
+    "query": "When does a customer normally have to pay an invoice?",
+    "expected_file": "invoice_payment_terms.txt"
+  },
+  {
+    "query": "How long does the company normally take to process vendor invoices?",
+    "expected_file": "vendor_payment_terms.txt"
+  },
+  {
+    "query": "Within how many days should employees file an expense report?",
+    "expected_file": "expense_policy.txt"
+  },
+  {
+    "query": "What is the minimum company password length?",
+    "expected_file": "password_policy.txt"
+  },
+  {
+    "query": "What happens after five incorrect login attempts?",
+    "expected_file": "account_lock_policy.txt"
+  },
+  {
+    "query": "How many days per week can staff work from home?",
+    "expected_file": "remote_work_policy.txt"
+  },
+  {
+    "query": "What are the normal working hours?",
+    "expected_file": "office_hours.txt"
+  },
+  {
+    "query": "How much notice must a permanent employee give before leaving?",
+    "expected_file": "notice_period.txt"
+  },
+  {
+    "query": "How long is the probation period for a new employee?",
+    "expected_file": "probation_policy.txt"
+  },
+  {
+    "query": "Are permanent employees provided medical insurance?",
+    "expected_file": "health_insurance.txt"
+  },
+  {
+    "query": "What must happen to a company laptop when an employee leaves?",
+    "expected_file": "laptop_policy.txt"
+  },
+  {
+    "query": "How frequently should critical information be backed up?",
+    "expected_file": "data_backup_policy.txt"
+  },
+  {
+    "query": "For how many years should financial records normally be kept?",
+    "expected_file": "data_retention.txt"
+  },
+  {
+    "query": "At what purchase value is a purchase order required?",
+    "expected_file": "purchase_order_policy.txt"
+  },
+  {
+    "query": "What information does a new supplier need to provide?",
+    "expected_file": "vendor_onboarding.txt"
+  },
+  {
+    "query": "How quickly are approved customer refunds normally processed?",
+    "expected_file": "refund_policy.txt"
+  },
+  {
+    "query": "How fast should support respond to a critical customer incident?",
+    "expected_file": "customer_support_sla.txt"
+  },
+  {
+    "query": "Who must approve an employee software access request?",
+    "expected_file": "software_access_policy.txt"
+  },
+  {
+    "query": "Who should employees contact when they suspect a cyber security incident?",
+    "expected_file": "security_incident_policy.txt"
+  },
+  {
+    "query": "Does overtime need approval before working extra hours?",
+    "expected_file": "overtime_policy.txt"
+  },
+  {
+    "query": "How often are formal employee performance reviews conducted?",
+    "expected_file": "performance_review.txt"
+  },
+  {
+    "query": "Can the company pay for approved professional training?",
+    "expected_file": "training_policy.txt"
+  },
+  {
+    "query": "Which company assets must be returned during employee exit?",
+    "expected_file": "asset_return_policy.txt"
+  },
+  {
+    "query": "Can employees share confidential customer information with anyone?",
+    "expected_file": "confidentiality_policy.txt"
+  },
+  {
+    "query": "How early should an expiring customer contract be reviewed?",
+    "expected_file": "contract_renewal.txt"
+  }
+]
