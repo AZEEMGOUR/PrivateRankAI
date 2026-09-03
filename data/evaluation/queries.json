@@ -1,0 +1,18 @@
+[
+  {
+    "query": "How many paid leaves can an employee take?",
+    "expected_file": "leave_policy.txt"
+  },
+  {
+    "query": "When should employees submit travel reimbursement?",
+    "expected_file": "travel_policy.txt"
+  },
+  {
+    "query": "When are customer invoices due?",
+    "expected_file": "payment_terms.txt"
+  },
+  {
+    "query": "How many unpaid leave days are allowed?",
+    "expected_file": "unpaid_leave_policy.txt"
+  }
+]
