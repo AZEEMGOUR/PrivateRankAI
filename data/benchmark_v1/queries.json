@@ -60,9 +60,12 @@
     "expected_file": "health_insurance.txt"
   },
   {
-    "query": "What must happen to a company laptop when an employee leaves?",
-    "expected_file": "laptop_policy.txt"
-  },
+  "query": "What must happen to a company laptop when an employee leaves?",
+  "expected_files": [
+    "laptop_policy.txt",
+    "asset_return_policy.txt"
+  ]
+},
   {
     "query": "How frequently should critical information be backed up?",
     "expected_file": "data_backup_policy.txt"

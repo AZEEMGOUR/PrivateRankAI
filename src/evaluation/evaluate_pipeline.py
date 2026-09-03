@@ -115,7 +115,10 @@ def main():
 
     for number, item in enumerate(queries, 1):
         query = item["query"]
-        expected_file = item["expected_file"]
+        expected_files = item.get(
+                "expected_files",
+                [item["expected_file"]] if "expected_file" in item else []
+            )
 
         start_time = time.perf_counter()
 
@@ -145,10 +148,13 @@ def main():
             for index in ranked_indices
         ]
 
-        if retrieval_files[0] == expected_file:
+        if retrieval_files[0] in expected_files:
             retrieval_top1_correct += 1
 
-        if expected_file in retrieval_files[:3]:
+        if any(
+            file in retrieval_files[:3]
+            for file in expected_files
+        ):
             retrieval_top3_correct += 1
 
         # -------------------------
@@ -182,17 +188,18 @@ def main():
             for candidate, _ in ranked_candidates
         ]
 
-        if final_files[0] == expected_file:
+        if final_files[0] in expected_files:
             reranker_top1_correct += 1
 
-        if expected_file in final_files:
-            expected_rank = (
-                final_files.index(expected_file) + 1
-            )
+        valid_ranks = [
+            final_files.index(file) + 1
+            for file in expected_files
+            if file in final_files
+        ]
 
-            reciprocal_ranks.append(
-                1 / expected_rank
-            )
+        if valid_ranks:
+            best_rank = min(valid_ranks)
+            reciprocal_ranks.append(1 / best_rank)
         else:
             reciprocal_ranks.append(0)
 
@@ -203,7 +210,7 @@ def main():
         latencies.append(elapsed_ms)
 
         print(f"\nQuery {number}: {query}")
-        print("Expected:", expected_file)
+        print("Expected:", expected_files)
         print("Retrieval #1:", retrieval_files[0])
         print("Reranker #1:", final_files[0])
         print(
