@@ -1,0 +1,122 @@
+[
+  {
+    "query": "Under the current policy, how much paid annual leave does a confirmed employee get?",
+    "expected_files": [
+      "annual_leave_current.txt"
+    ]
+  },
+  {
+    "query": "How much annual leave was provided under the old policy?",
+    "expected_files": [
+      "annual_leave_old.txt"
+    ]
+  },
+  {
+    "query": "Employee probation me hai, usko kitni paid leave mil sakti hai?",
+    "expected_files": [
+      "probation_leave.txt"
+    ]
+  },
+  {
+    "query": "Are 24 unpaid days the same as annual paid leave?",
+    "expected_files": [
+      "unpaid_leave.txt"
+    ]
+  },
+  {
+    "query": "Customer ka normal invoice kitne din me due hota hai?",
+    "expected_files": [
+      "customer_invoice.txt"
+    ]
+  },
+  {
+    "query": "How long can an enterprise customer with negotiated terms take to pay?",
+    "expected_files": [
+      "enterprise_invoice.txt"
+    ]
+  },
+  {
+    "query": "Supplier invoice process hone me normally kitna time lagta hai?",
+    "expected_files": [
+      "vendor_invoice.txt"
+    ]
+  },
+  {
+    "query": "Who needs to approve an overseas trip before booking the flight?",
+    "expected_files": [
+      "international_travel.txt"
+    ]
+  },
+  {
+    "query": "Trip complete hone ke baad expense claim kab tak submit karna hai?",
+    "expected_files": [
+      "travel_reimbursement.txt"
+    ]
+  },
+  {
+    "query": "What is the minimum password length under the current security rule?",
+    "expected_files": [
+      "password_current.txt"
+    ]
+  },
+  {
+    "query": "What was the previous minimum password requirement?",
+    "expected_files": [
+      "password_old.txt"
+    ]
+  },
+  {
+    "query": "What happens if someone enters the wrong password five times?",
+    "expected_files": [
+      "account_lock.txt"
+    ]
+  },
+  {
+    "query": "Permanent employee resign kare to notice period kitna hai?",
+    "expected_files": [
+      "permanent_notice.txt"
+    ]
+  },
+  {
+    "query": "How much notice is required while still on probation?",
+    "expected_files": [
+      "probation_notice.txt"
+    ]
+  },
+  {
+    "query": "Critical customer issue ka first response kitni der me dena hai?",
+    "expected_files": [
+      "support_critical.txt"
+    ]
+  },
+  {
+    "query": "What is the response target for a high priority support incident?",
+    "expected_files": [
+      "support_high.txt"
+    ]
+  },
+  {
+    "query": "How frequently are critical finance databases backed up?",
+    "expected_files": [
+      "financial_backup.txt"
+    ]
+  },
+  {
+    "query": "For how many years must accounting records be preserved?",
+    "expected_files": [
+      "financial_retention.txt"
+    ]
+  },
+  {
+    "query": "Who must approve administrator-level system access?",
+    "expected_files": [
+      "privileged_access.txt"
+    ]
+  },
+  {
+    "query": "Employee company chhod raha hai to laptop ka kya hoga?",
+    "expected_files": [
+      "asset_exit.txt"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import json
 import sys
 import time
 from pathlib import Path
+import argparse
 
 import torch
 from sentence_transformers import SentenceTransformer, CrossEncoder
@@ -34,6 +35,16 @@ def build_chunks(documents):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--dataset",
+        default="data/benchmark_v1"
+    )
+
+    args = parser.parse_args()
+
+    dataset_dir = Path(args.dataset)
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     print("Device:", device)
@@ -45,7 +56,7 @@ def main():
     # Load documents
     # -----------------------------
 
-    documents = load_documents("data/benchmark_v1")
+    documents = load_documents(str(dataset_dir))
     chunks = build_chunks(documents)
 
     print("Documents:", len(documents))
@@ -56,7 +67,7 @@ def main():
     # -----------------------------
 
     with open(
-        "data/benchmark_v1/queries.json",
+        dataset_dir / "queries.json",
         "r",
         encoding="utf-8",
     ) as file:

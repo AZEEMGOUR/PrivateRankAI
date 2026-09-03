@@ -1,0 +1,2 @@
+Security event logs are retained for twelve months
+unless an investigation requires longer retention.

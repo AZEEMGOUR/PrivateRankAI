@@ -1,0 +1,2 @@
+Development repositories are backed up once every week.
+Developers should also push important source code frequently.

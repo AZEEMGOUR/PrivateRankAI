@@ -1,0 +1,3 @@
+User accounts are temporarily locked after
+five consecutive failed authentication attempts.
+Automatic access is restored after 30 minutes.

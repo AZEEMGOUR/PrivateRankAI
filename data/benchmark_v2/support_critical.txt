@@ -1,0 +1,2 @@
+A severity-one customer incident requires
+an initial support response within one hour.

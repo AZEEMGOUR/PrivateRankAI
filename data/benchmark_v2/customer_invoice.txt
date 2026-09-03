@@ -1,0 +1,2 @@
+Standard customer invoices become due 30 days after
+the invoice date unless another term is written in the contract.
