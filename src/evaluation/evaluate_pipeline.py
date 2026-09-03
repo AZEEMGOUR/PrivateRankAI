@@ -42,6 +42,11 @@ def main():
         default="data/benchmark_v1"
     )
 
+    parser.add_argument(
+        "--reranker-model",
+        default="Qwen/Qwen3-Reranker-0.6B"
+    )
+
     args = parser.parse_args()
 
     dataset_dir = Path(args.dataset)
@@ -105,7 +110,7 @@ def main():
     print("Loading reranker...")
 
     reranker = CrossEncoder(
-        RERANKER_MODEL,
+        args.reranker_model,
         device=device,
     )
 
