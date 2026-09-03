@@ -1,0 +1,2 @@
+Severity-three security incidents must receive an initial response
+within one business day.

@@ -1,0 +1,2 @@
+Analytics datasets are backed up once every night.
+Historical analytical exports are archived weekly.

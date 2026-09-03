@@ -1,0 +1,2 @@
+Purchases above 200000 rupees require approval from the department director.
+The purchase order must be created before the supplier is instructed to proceed.

@@ -1,0 +1,3 @@
+Production database administrator access requires manager, data-owner,
+and information-security approval.
+Administrator access permits controlled database changes.

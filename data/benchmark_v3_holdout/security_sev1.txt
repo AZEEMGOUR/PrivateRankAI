@@ -1,0 +1,2 @@
+Severity-one security incidents must be acknowledged within 15 minutes.
+The incident response team must begin investigation immediately.

@@ -1,0 +1,2 @@
+Approved customer refunds below 50000 rupees are normally processed
+within five business days.

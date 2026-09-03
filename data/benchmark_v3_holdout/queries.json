@@ -1,0 +1,146 @@
+[
+  {
+    "query": "Confirmed employee ko saal me kitni paid medical leave milti hai?",
+    "expected_files": [
+      "medical_leave_confirmed.txt"
+    ]
+  },
+  {
+    "query": "How much annual leave does a fixed-term employee receive?",
+    "expected_files": [
+      "annual_leave_contract.txt"
+    ]
+  },
+  {
+    "query": "If an expense is 30000 rupees, whose approval is required?",
+    "expected_files": [
+      "expense_finance_limit.txt"
+    ]
+  },
+  {
+    "query": "Two lakh se zyada purchase approve kaun karega?",
+    "expected_files": [
+      "purchase_director_limit.txt"
+    ]
+  },
+  {
+    "query": "Export customer ko invoice pay karne ke liye kitne din milte hain?",
+    "expected_files": [
+      "customer_payment_export.txt"
+    ]
+  },
+  {
+    "query": "How soon is an overseas supplier normally paid after approval?",
+    "expected_files": [
+      "supplier_payment_foreign.txt"
+    ]
+  },
+  {
+    "query": "Production application access ke liye security approval chahiye?",
+    "expected_files": [
+      "production_access.txt"
+    ]
+  },
+  {
+    "query": "Who must approve production database administrator access?",
+    "expected_files": [
+      "database_admin_access.txt"
+    ]
+  },
+  {
+    "query": "How quickly must the team acknowledge the most severe security incident?",
+    "expected_files": [
+      "security_sev1.txt"
+    ]
+  },
+  {
+    "query": "Severity two incident ka acknowledgement time kya hai?",
+    "expected_files": [
+      "security_sev2.txt"
+    ]
+  },
+  {
+    "query": "India office confirmed employee month me kitne din ghar se kaam kar sakta hai?",
+    "expected_files": [
+      "remote_india.txt"
+    ]
+  },
+  {
+    "query": "How long is probation for employees joining a Gulf-region office?",
+    "expected_files": [
+      "probation_gulf.txt"
+    ]
+  },
+  {
+    "query": "Contract employee resign kare to notice kitna dena padega?",
+    "expected_files": [
+      "notice_contract.txt"
+    ]
+  },
+  {
+    "query": "Employee abhi probation par hai. Resignation notice kitna hai?",
+    "expected_files": [
+      "notice_probation.txt"
+    ]
+  },
+  {
+    "query": "How frequently is the live customer database backed up?",
+    "expected_files": [
+      "backup_customer_db.txt"
+    ]
+  },
+  {
+    "query": "Analytics data ka backup kitni baar hota hai?",
+    "expected_files": [
+      "backup_analytics.txt"
+    ]
+  },
+  {
+    "query": "A customer refund of 80000 rupees may take how long?",
+    "expected_files": [
+      "refund_large.txt"
+    ]
+  },
+  {
+    "query": "Normal small approved refund kitne business days me process hota hai?",
+    "expected_files": [
+      "refund_standard.txt"
+    ]
+  },
+  {
+    "query": "Strategic enterprise contract expiry se kitne din pehle review hona chahiye?",
+    "expected_files": [
+      "contract_review_strategic.txt"
+    ]
+  },
+  {
+    "query": "What should happen to an assigned laptop when the employee exits?",
+    "expected_files": [
+      "laptop_exit.txt"
+    ]
+  },
+  {
+    "query": "Damaged company phone ko employee kahan submit kare?",
+    "expected_files": [
+      "phone_repair.txt"
+    ]
+  },
+  {
+    "query": "Mandatory compliance training kitne din ke andar complete karni hai?",
+    "expected_files": [
+      "training_mandatory.txt"
+    ]
+  },
+  {
+    "query": "For how many years are tax records normally kept?",
+    "expected_files": [
+      "records_tax.txt"
+    ]
+  },
+  {
+    "query": "How long are closed customer support tickets retained?",
+    "expected_files": [
+      "records_support.txt"
+    ]
+  }
+]

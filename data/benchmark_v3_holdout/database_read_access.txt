@@ -1,0 +1,2 @@
+Read-only production database access requires manager and data-owner approval.
+Users may view records but cannot modify them.

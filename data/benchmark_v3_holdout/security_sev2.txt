@@ -1,0 +1,2 @@
+Severity-two security incidents must be acknowledged within 90 minutes.
+Investigation begins according to the high-priority response process.

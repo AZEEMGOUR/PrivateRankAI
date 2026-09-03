@@ -1,0 +1,2 @@
+Business expenses below 25000 rupees require approval from the reporting manager.
+Receipts must be attached to the expense claim.

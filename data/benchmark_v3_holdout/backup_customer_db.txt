@@ -1,0 +1,2 @@
+The production customer database is backed up every four hours.
+Daily copies are retained separately for disaster recovery.

@@ -1,0 +1,2 @@
+Source-code repositories are backed up every seven days.
+Developers are expected to push committed work to the central repository regularly.

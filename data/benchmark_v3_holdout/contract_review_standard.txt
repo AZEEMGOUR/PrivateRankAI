@@ -1,0 +1,1 @@
+Standard customer contracts should be reviewed 45 days before expiry.
