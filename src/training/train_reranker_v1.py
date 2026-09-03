@@ -57,7 +57,7 @@ def main():
         max_length=128,
         device="cuda",
         model_kwargs={
-            "torch_dtype": torch.bfloat16
+            "torch_dtype": torch.float16
         },
     )
 
