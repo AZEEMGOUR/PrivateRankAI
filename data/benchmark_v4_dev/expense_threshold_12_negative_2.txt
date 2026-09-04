@@ -1,0 +1,4 @@
+Expense Group 2
+
+Travel advances below 25000 rupees may be approved
+by the employee's department manager.

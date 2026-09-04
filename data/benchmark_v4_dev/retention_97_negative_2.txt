@@ -1,0 +1,4 @@
+Record Group 7
+
+Routine security-event logs are retained
+for 1 years unless an investigation requires longer retention.

@@ -1,0 +1,6 @@
+Customer Group 2
+
+Approved enterprise customers with negotiated credit terms
+may pay invoices within 51 calendar days.
+
+The negotiated term overrides the standard customer term.

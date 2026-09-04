@@ -1,0 +1,4 @@
+Expense Group 10
+
+Travel advances below 65000 rupees may be approved
+by the employee's department manager.

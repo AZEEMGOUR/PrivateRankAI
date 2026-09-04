@@ -1,0 +1,6 @@
+System 10
+
+Administrator-level access requires approval from
+the department manager, system owner, and information-security team.
+
+All three approvals are mandatory.

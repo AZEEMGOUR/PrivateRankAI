@@ -1,0 +1,4 @@
+Customer Group 5
+
+Standard business customers must pay invoices
+within 24 calendar days.

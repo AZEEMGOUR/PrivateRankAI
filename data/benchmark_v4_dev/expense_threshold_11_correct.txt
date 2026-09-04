@@ -1,0 +1,6 @@
+Expense Group 1
+
+Business expenses of 20000 rupees or more require
+approval from both the reporting manager and finance department.
+
+Receipts and business justification are mandatory.

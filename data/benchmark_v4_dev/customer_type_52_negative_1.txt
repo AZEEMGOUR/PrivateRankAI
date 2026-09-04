@@ -1,0 +1,4 @@
+Customer Group 2
+
+Standard business customers must pay invoices
+within 21 calendar days.

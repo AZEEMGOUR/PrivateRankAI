@@ -1,0 +1,4 @@
+Record Group 6
+
+Routine security-event logs are retained
+for 2 years unless an investigation requires longer retention.

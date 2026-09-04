@@ -1,0 +1,4 @@
+Service Group 4
+
+Standard severity-three incidents require an initial response
+within 510 minutes.

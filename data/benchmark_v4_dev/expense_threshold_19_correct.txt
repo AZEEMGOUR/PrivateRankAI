@@ -1,0 +1,6 @@
+Expense Group 9
+
+Business expenses of 60000 rupees or more require
+approval from both the reporting manager and finance department.
+
+Receipts and business justification are mandatory.

@@ -1,0 +1,6 @@
+Policy Group 2
+
+Probationary employees may receive
+11 paid leave days during probation.
+
+This rule applies only while the employee remains on probation.

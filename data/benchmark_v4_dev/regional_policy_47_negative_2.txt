@@ -1,0 +1,6 @@
+Region Policy 7
+
+International customer invoices have a payment period
+of 66 days.
+
+This rule applies to customers, not suppliers.

@@ -1,0 +1,6 @@
+Service Group 3
+
+Severity-one critical incidents require an initial response
+within 12 minutes.
+
+Immediate investigation must begin after acknowledgement.

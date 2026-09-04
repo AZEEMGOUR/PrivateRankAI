@@ -1,0 +1,6 @@
+Expense Group 5
+
+Business expenses below 40000 rupees require
+approval only from the reporting manager.
+
+Valid receipts must still be attached.

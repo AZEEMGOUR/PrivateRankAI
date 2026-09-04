@@ -1,0 +1,4 @@
+Asset Procedure 10
+
+If the assigned test device is damaged during employment,
+the employee should submit it to IT for repair assessment.

@@ -1,0 +1,6 @@
+Customer Group 5
+
+Approved enterprise customers with negotiated credit terms
+may pay invoices within 54 calendar days.
+
+The negotiated term overrides the standard customer term.

@@ -1,0 +1,4 @@
+Service Group 5
+
+Severity-two high-priority incidents require an initial response
+within 80 minutes.

@@ -1,0 +1,4 @@
+Asset Procedure 5
+
+If the assigned security token is damaged during employment,
+the employee should submit it to IT for repair assessment.
