@@ -124,6 +124,7 @@ def main():
 
     reciprocal_ranks = []
     latencies = []
+    failures = []
 
     print("\n==============================")
     print("EVALUATION STARTED")
@@ -204,8 +205,16 @@ def main():
             for candidate, _ in ranked_candidates
         ]
 
+
+
         if final_files[0] in expected_files:
             reranker_top1_correct += 1
+        else:
+            failures.append({
+                "query": query,
+                "expected": expected_files,
+                "predicted": final_files[0],
+            })
 
         valid_ranks = [
             final_files.index(file) + 1
@@ -288,6 +297,21 @@ def main():
         round(avg_latency, 2),
         "ms",
     )
+
+    print("\n==============================")
+    print("RERANKER FAILURES")
+    print("==============================")
+
+    if not failures:
+        print("No reranker failures.")
+    else:
+        for number, failure in enumerate(failures, 1):
+            print(f"\nFailure {number}")
+            print("Query:", failure["query"])
+            print("Expected:", failure["expected"])
+            print("Predicted:", failure["predicted"])
+
+    print("\nTotal Failures:", len(failures))
 
 
 if __name__ == "__main__":
