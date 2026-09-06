@@ -1,0 +1,33 @@
+{
+  "version": "PrivateRank V4.1",
+  "format": "RankNet labeled-list: query + two docs + labels",
+  "seed": 42,
+  "train_rows": 340,
+  "validation_rows": 85,
+  "train_categories": {
+    "temporal_version": 256,
+    "access_control": 12,
+    "employee_status": 12,
+    "priority": 12,
+    "retention": 12,
+    "numeric_threshold": 12,
+    "payment_context": 12,
+    "business_intent": 12
+  },
+  "validation_categories": {
+    "temporal_version": 64,
+    "numeric_threshold": 3,
+    "payment_context": 3,
+    "employee_status": 3,
+    "access_control": 3,
+    "priority": 3,
+    "business_intent": 3,
+    "retention": 3
+  },
+  "notes": [
+    "Temporal examples are bidirectional: current and historical.",
+    "Two entire temporal subjects are held out for validation.",
+    "Replay examples preserve non-temporal enterprise ranking skills and are weighted 4x in training.",
+    "The known real password failure text is not copied into training data."
+  ]
+}

@@ -27,7 +27,7 @@ BASE_RERANKER = (
 PRIVATE_RANK_V3 = (
     PROJECT_ROOT
     / "models"
-    / "private_rank_v3"
+    / "private_rank_v4_1"
 )
 
 INDEX_DIR = (
@@ -601,7 +601,7 @@ def compare_models(
     print("\n")
     print("=" * 70)
     print(
-        "BASE vs PRIVATE RANK V3"
+        "BASE vs PRIVATE RANK V4.1"
     )
     print("=" * 70)
 
@@ -611,7 +611,7 @@ def compare_models(
     )
 
     print(
-        "PrivateRank V3 Top-1:",
+        "PrivateRank V4.1 Top-1:",
         f"{private_result['accuracy']:.2%}",
     )
 
@@ -621,12 +621,12 @@ def compare_models(
     )
 
     print(
-        "\nBase wrong -> V3 correct:",
+        "\nBase wrong -> V4.1 correct:",
         len(improvements),
     )
 
     print(
-        "Base correct -> V3 wrong:",
+        "Base correct -> V4.1 wrong:",
         len(regressions),
     )
 
@@ -732,7 +732,7 @@ def main():
     private_result = (
         evaluate_reranker(
             PRIVATE_RANK_V3,
-            "PrivateRank V3",
+            "PrivateRank V4.1",
             queries,
             all_candidates,
             device,
@@ -747,4 +747,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
