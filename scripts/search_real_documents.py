@@ -83,6 +83,16 @@ def load_models(device, reranker_model):
     reranker = CrossEncoder(
         reranker_source,
         device=device,
+        max_length=256,
+        prompts={
+            "query": (
+                "Rank enterprise passages by the exact user intent. "
+                "Respect dates, policy versions, current versus historical rules, "
+                "employee status, region, entity IDs, numeric thresholds, "
+                "and business context."
+            )
+        },
+        default_prompt_name="query",
     )
 
     return embedding_model, reranker
