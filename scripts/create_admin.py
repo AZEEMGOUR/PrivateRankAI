@@ -1,6 +1,5 @@
 import argparse
 import getpass
-import sqlite3
 import sys
 from pathlib import Path
 
@@ -14,7 +13,11 @@ if str(PROJECT_ROOT) not in sys.path:
     )
 
 from src.auth.security import hash_password
-from src.storage.user_store import UserStore
+from src.auth.roles import ADMIN_ROLE
+from src.storage.user_store import (
+    DuplicateEmailError,
+    UserStore,
+)
 
 
 def create_admin(
@@ -38,7 +41,7 @@ def create_admin(
         password_hash=hash_password(
             password
         ),
-        role="Admin",
+        role=ADMIN_ROLE,
         is_active=True,
     )
 
@@ -103,7 +106,10 @@ def main():
             password=password,
             store=store,
         )
-    except (ValueError, sqlite3.IntegrityError) as error:
+    except (
+        DuplicateEmailError,
+        ValueError,
+    ) as error:
         print(
             str(error),
             file=sys.stderr,

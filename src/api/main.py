@@ -20,6 +20,9 @@ from pydantic import (
 from src.api.search_service import (
     PrivateRankSearchService,
 )
+from src.api.user_routes import (
+    router as user_router,
+)
 from src.ingestion.pdf_loader import (
     load_pdf_pages,
 )
@@ -34,6 +37,11 @@ from src.auth.security import (
     create_access_token,
     get_access_token_expire_minutes,
     warn_if_using_development_secret,
+)
+from src.auth.schemas import (
+    LoginRequest,
+    LoginResponse,
+    PublicUser,
 )
 from src.storage.document_store import (
     DocumentStore,
@@ -155,6 +163,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(user_router)
+
 
 class SearchRequest(BaseModel):
     query: str = Field(
@@ -185,19 +195,10 @@ class SearchRequest(BaseModel):
     )
 
 
-class LoginRequest(BaseModel):
-    email: str = Field(
-        min_length=3,
-        max_length=320,
-    )
-
-    password: str = Field(
-        min_length=1,
-        max_length=1024,
-    )
-
-
-@app.post("/auth/login")
+@app.post(
+    "/auth/login",
+    response_model=LoginResponse,
+)
 def login(request: LoginRequest):
     user = authenticate_user(
         request.email,
@@ -221,7 +222,10 @@ def login(request: LoginRequest):
     }
 
 
-@app.get("/auth/me")
+@app.get(
+    "/auth/me",
+    response_model=PublicUser,
+)
 def auth_me(
     current_user=Depends(
         get_current_user

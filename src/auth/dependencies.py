@@ -13,6 +13,10 @@ from src.auth.security import (
     hash_password,
     verify_password,
 )
+from src.auth.roles import (
+    ADMIN_ROLE,
+    role_matches,
+)
 from src.storage.user_store import UserStore
 
 
@@ -96,3 +100,24 @@ def get_current_user(
         raise authentication_error()
 
     return user
+
+
+def require_admin(
+    current_user=Depends(
+        get_current_user
+    ),
+):
+    if not role_matches(
+        current_user.get("role"),
+        ADMIN_ROLE,
+    ):
+        raise HTTPException(
+            status_code=(
+                status.HTTP_403_FORBIDDEN
+            ),
+            detail=(
+                "Administrator access required."
+            ),
+        )
+
+    return current_user

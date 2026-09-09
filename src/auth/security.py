@@ -71,7 +71,7 @@ def warn_if_using_development_secret():
         )
 
 
-def hash_password(password):
+def validate_password(password):
     password = str(password or "")
 
     if len(password) < MINIMUM_PASSWORD_LENGTH:
@@ -79,6 +79,14 @@ def hash_password(password):
             "Password must be at least "
             f"{MINIMUM_PASSWORD_LENGTH} characters."
         )
+
+    return password
+
+
+def hash_password(password):
+    password = validate_password(
+        password
+    )
 
     return password_hasher.hash(password)
 
