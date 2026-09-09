@@ -4,6 +4,7 @@ from pathlib import Path
 from uuid import uuid4
 from fastapi.responses import FileResponse
 from fastapi import (
+    Depends,
     FastAPI,
     File,
     Form,
@@ -21,6 +22,18 @@ from src.api.search_service import (
 )
 from src.ingestion.pdf_loader import (
     load_pdf_pages,
+)
+
+from src.auth.dependencies import (
+    authenticate_user,
+    authentication_error,
+    get_current_user,
+    user_store,
+)
+from src.auth.security import (
+    create_access_token,
+    get_access_token_expire_minutes,
+    warn_if_using_development_secret,
 )
 from src.storage.document_store import (
     DocumentStore,
@@ -108,9 +121,11 @@ def rollback_new_upload(
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     document_store.initialize_database()
+    user_store.initialize_database()
     document_store.bootstrap_existing_pdfs(
         DOCUMENTS_DIR
     )
+    warn_if_using_development_secret()
 
     search_service.load()
 
@@ -168,6 +183,51 @@ class SearchRequest(BaseModel):
         default=None,
         max_length=200,
     )
+
+
+class LoginRequest(BaseModel):
+    email: str = Field(
+        min_length=3,
+        max_length=320,
+    )
+
+    password: str = Field(
+        min_length=1,
+        max_length=1024,
+    )
+
+
+@app.post("/auth/login")
+def login(request: LoginRequest):
+    user = authenticate_user(
+        request.email,
+        request.password,
+    )
+
+    if user is None:
+        raise authentication_error()
+
+    expire_minutes = (
+        get_access_token_expire_minutes()
+    )
+
+    return {
+        "access_token": create_access_token(
+            user["id"]
+        ),
+        "token_type": "bearer",
+        "expires_in": expire_minutes * 60,
+        "user": user,
+    }
+
+
+@app.get("/auth/me")
+def auth_me(
+    current_user=Depends(
+        get_current_user
+    ),
+):
+    return current_user
 
 
 @app.get("/")
